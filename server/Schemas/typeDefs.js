@@ -1,5 +1,5 @@
 // import the gql tagged template function
-const { gql } = require('./node_modules/apollo-server-express');
+const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
 
@@ -18,7 +18,7 @@ type Author {
     _id: ID
     description: String
     bookId: String
-    image: Image
+    image: String
     links: String
 }
 
@@ -45,7 +45,7 @@ input bookInput {
     description: String
     title: String
     image: String
-    link: string
+    link: String
 
 }
 
