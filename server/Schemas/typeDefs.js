@@ -1,5 +1,5 @@
 // import the gql tagged template function
-const { gql } = require('apollo-server-express');
+const { gql } = require('./node_modules/apollo-server-express');
 
 const typeDefs = gql`
 
@@ -10,7 +10,7 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveBook([Author]): User
+    saveBook(input: bookInput): User
     removeBook(bookId: ID!): User
 }
 
