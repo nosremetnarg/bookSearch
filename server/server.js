@@ -6,7 +6,8 @@ const path = require('path');
 
 
 // import ApolloServer
-const { typeDefs, resolvers } = require('./schemas');
+const { resolvers } = require('./schemas/resolvers');
+const { typeDefs } = require('./schemas/typeDefs');
 const db = require('./config/connection');
 
 // const routes = require('./routes');
