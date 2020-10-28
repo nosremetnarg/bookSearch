@@ -1,5 +1,5 @@
 // import the gql tagged template function
-const { gql } = require('apollo-server-express');
+const { gql } = require('./node_modules/apollo-server-express');
 
 const typeDefs = gql`
 
